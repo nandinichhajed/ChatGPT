@@ -12,12 +12,13 @@ def chat(request):
 
 @csrf_exempt
 def Ajax(request):
-    if request.headers.get('X-Requested-With') == 'XMLHttpRequest': # Check if request is Ajax
+    if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
 
         text = request.POST.get('text')
         print(text)
 
-        openai.api_key = "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" # Here you have to add your api key.
+        openai.api_key = os.environ['openai.api_key']
+
         res = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         # stream=True,
