@@ -3,6 +3,7 @@ from .models import *
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import openai
+import os
 
 def chat(request):
     chats = Chat.objects.all()
