@@ -16,7 +16,7 @@ def Ajax(request):
     if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
 
         text = request.POST.get('text')
-        prompt = "answer all the questions assuming your current location as London, and no need to specify As an AI language model,"
+        prompt = "A sassy and tired personal Assistant that is located in london"
         print(text)
 
         openai.api_key = os.environ['openai.api_key']
