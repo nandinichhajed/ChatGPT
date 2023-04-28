@@ -10,7 +10,7 @@ function chat_ajax(){
     let chatCard = document.querySelector('#chatCard')
     chatCard.innerHTML += `
     <div class="card-body bg bg-primary">
-        <h5 class="card-title">${text}</h5>
+        <p class="card-title font-weight-light">${text}</p>
     </div>
     `
     console.log(text)
@@ -34,7 +34,7 @@ function chat_ajax(){
             let response = res.data
             chatCard.innerHTML += `
             <div class="card-body bg bg-light text-dark">
-                  <h5 class="card-title">${response}</h5>
+                  <p class="card-title font-weight-light">${response}</p>
             </div>
             `
             loading.innerHTML = ''
