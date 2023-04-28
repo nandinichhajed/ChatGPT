@@ -28,13 +28,13 @@ function chat_ajax(){
         type: 'POST',
         url: '/ajax/',
         data: {
-            'text': text
+            'text': text.replace(/\n/g, '<br>')
         },
         success: (res)=> {
             let response = res.data
             chatCard.innerHTML += `
             <div class="card-body bg bg-light text-dark">
-                  <p class="card-title font-weight-light">${response}</p>
+                  <p class="card-title font-weight-light" style="white-space: pre-wrap;">${response}</p>
             </div>
             `
             loading.innerHTML = ''
