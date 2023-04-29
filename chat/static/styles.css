@@ -1,0 +1,21 @@
+.card{
+    background-color: #343541 !important;
+}
+
+/* #chatCard{
+    border: red solid 1px !important;
+} */
+
+.card-body.bg.bg-primary {
+    background-color: #343541 !important;
+    /* border: #D1D5D2 solid 1px !important; */
+  }
+
+.card-body.bg.bg-light {
+    background-color: #444654 !important;
+    color: #D1D5D2 !important;
+  }
+
+.py-4 .d-flex .flex-row{
+  color: #fff !important;
+}
