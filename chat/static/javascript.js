@@ -10,7 +10,7 @@ function chat_ajax(){
     let chatCard = document.querySelector('#chatCard')
     chatCard.innerHTML += `
     <div class="card-body bg bg-primary">
-        <p class="card-title font-weight-light">${text}</p>
+        <p class="card-title font-weight-light" style="white-space: pre-wrap;">${text}</p>
     </div>
     `
     console.log(text)
@@ -28,7 +28,7 @@ function chat_ajax(){
         type: 'POST',
         url: '/ajax/',
         data: {
-            'text': text.replace(/\n/g, '<br>')
+            'text': text
         },
         success: (res)=> {
             let response = res.data

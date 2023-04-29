@@ -14,11 +14,11 @@
         <div class="row d-flex justify-content-center">
           <div class="col-md-7 mb-4 mb-md-0">
             <!-- text-color changed -->
-            <div class="py-4 d-flex flex-row"><h1>ChatGPT</h1></div>
+            <div class="py-4 d-flex flex-row" style="color: #fff;"><h1>ChatGPT</h1></div>
             <div class="card text-white border-0" id="chatCard">
               {% for chat in chats %}
                 <div class="card-body bg bg-primary mb-4">
-                <p class="card-title font-weight-light">{{ chat.text }}</p>
+                  <p class="card-title font-weight-light" style="white-space: pre-wrap;">{{ chat.text }}</p>
                 </div>
                 <div class="card-body bg bg-light text-dark mb-4 text-justify">
                   <p class="card-title font-weight-light" style="white-space: pre-wrap;">{{ chat.gpt }}</p>
