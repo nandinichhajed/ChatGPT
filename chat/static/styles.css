@@ -16,6 +16,15 @@
     color: #D1D5D2 !important;
   }
 
-.py-4 .d-flex .flex-row{
-  color: #fff !important;
+.gpt-blue {
+    color: #31A37F !important;
+  }
+
+.submit-button{
+  background-color: #31a37f;
+  border: #31A37F;
+}
+
+.submit-button:hover{
+  background-color: #02c285;
 }
