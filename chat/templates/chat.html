@@ -7,8 +7,8 @@
 
 {% block body %}
 
-<section class="bg bg-gradient bg-light">
-  <div class="container py-5">
+<section class="background">
+  <div class="container py-5 background">
     <div class="card">
       <div class="card-body">
         <div class="row d-flex justify-content-center">
@@ -17,10 +17,10 @@
             <div class="py-4 d-flex flex-row" style="color: #31A37F;"><h1>ChatGPT</h1></div>
             <div class="card text-white border-0" id="chatCard">
               {% for chat in chats %}
-                <div class="card-body bg bg-primary mb-4">
+                <div class="card-body bg bg-primary">
                   <p class="card-title font-weight-light" style="white-space: pre-wrap;">{{ chat.text }}</p>
                 </div>
-                <div class="card-body bg bg-light text-dark mb-4 text-justify">
+                <div class="card-body bg bg-light text-dark text-justify">
                   <p class="card-title font-weight-light" style="white-space: pre-wrap;">{{ chat.gpt }}</p>
                 </div>
               {% endfor %}
