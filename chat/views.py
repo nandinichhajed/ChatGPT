@@ -28,7 +28,7 @@ def Ajax(request):
 
         messages.append({"role": "user", "content": f"{text}"})
         res = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             messages=messages,
             temperature = 0.7,
         )
