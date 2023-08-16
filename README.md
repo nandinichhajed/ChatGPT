@@ -1,5 +1,5 @@
 # ChatGPT
-ChatGPT
+A ChatGPT clone using OpenAI API key 
 
 ## Tech Used
 - OpenAI
