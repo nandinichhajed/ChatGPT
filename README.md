@@ -41,7 +41,12 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
->Note: Create a .env file and enter your SECRET_KEY and openai.api_key here.
+>Note:
+<br>
+1. Create a .env file and enter your SECRET_KEY and openai.api_key here.
+<br>
+2. In chat app go to views.py and change `model=<model_name>` compatable with your API Key
+
 
 **Migrate**
 
